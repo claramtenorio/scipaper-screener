@@ -1,0 +1,16 @@
+# Ambientes virtuais e cache do Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Variáveis de ambiente e segredos (NUNCA subir para o Git)
+.env
+
+# Ignorar dados brutos/processados pesados, mas manter as pastas no Git
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/raw/sample_papers.csv
