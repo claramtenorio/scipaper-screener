@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field, field_validator
 
 class PaperInput(BaseModel):
     """Schema de validação para cada artigo bruto carregado no Extract"""
-    paper_id: str = Field(..., description="Identificador único do artigo (ID)")
+    paper_id: str =Field(..., description="Identificador único do artigo (ID)")
     title: str = Field(..., min_length=5, description="Título do artigo")
     abstract: str = Field(..., min_length=30, description="Resumo/abstract completo do artigo")
     authors: Optional[str] = Field(default="Desconhecido", description="Autores do artigo")
