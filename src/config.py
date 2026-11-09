@@ -15,7 +15,7 @@ APPROVED_EXCEL_PATH = PROCESSED_DIR / "approved_papers.xlsx"
 
 # Configurações da API do Gemini
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 
 # Critérios padrão de inclusão e exclusão para a pesquisa, podem ser customizados
 DEFAULT_RESEARCH_CRITERIA = """
