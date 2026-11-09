@@ -20,7 +20,7 @@ class PaperLoader:
         self.cache_path = Path(cache_path)
         self.approved_csv_path = Path(approved_csv_path)
         self.approved_excel_path = Path(approved_excel_path)
-        self.cache_path.parent.makedirs(parents=True, exist_ok=True)
+        self.cache_path.parent.mkdir(parents=True, exist_ok=True)
 
     def transform_and_load(
         self,
