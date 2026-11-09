@@ -24,7 +24,7 @@ class PaperExtractor:
         if self.raw_path.exists():
             return
 
-        self.raw_path.parent.makedirs(parents=True, exist_ok=True)
+        self.raw_path.parent.mkdir(parents=True, exist_ok=True)
         sample_data = [
             {
                 "paper_id": "ARXIV-2502.101",
